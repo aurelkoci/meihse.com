@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>meihse.al – Under Construction</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0d0d0d;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 540px;
+    }
+
+    .icon {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+      animation: spin 4s linear infinite;
+      display: inline-block;
+    }
+
+    @keyframes spin {
+      0%   { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #a0a0a0;
+      line-height: 1.6;
+    }
+
+    .bar-wrap {
+      margin-top: 2rem;
+      background: #1e1e1e;
+      border-radius: 9999px;
+      height: 8px;
+      overflow: hidden;
+    }
+
+    .bar {
+      height: 100%;
+      width: 40%;
+      background: linear-gradient(90deg, #6c63ff, #48cfad);
+      border-radius: 9999px;
+      animation: progress 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes progress {
+      from { width: 25%; }
+      to   { width: 65%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon" role="img" aria-label="Under construction icon">⚙️</div>
+    <h1>Under Construction</h1>
+    <p>We're working hard to bring you something great.<br />Check back soon!</p>
+    <div class="bar-wrap">
+      <div class="bar"></div>
+    </div>
+  </div>
+</body>
+</html>
